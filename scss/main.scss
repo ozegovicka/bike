@@ -20,10 +20,15 @@ nav{
                color: #ffffff;
                padding: 6px;
                &:hover{
-                   background: #916e64;
+                   background: $headerColor;
                    border-radius: 20px;
                }
            }
         }
+    }
+}
+.header{
+    img{
+        width: 100%;
     }
 }
