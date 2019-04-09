@@ -1,16 +1,22 @@
 @import '_vars';
 @import '_mixins';
 
-body {
-    width: 70%;
+body{
+    background-color: #dfdddd;
+    margin: 0;
+    font-family: $fontFamily;
+}
+.main {
+    width: 65%;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 nav{
     background-color: #181818;
-    padding: 10px;
+    padding: 20px;
     ul{
         text-align: right;
-        margin-right: 10px;
+        margin-right: 16px;
         li{
            display: inline-block;
            text-transform: uppercase;
@@ -19,6 +25,7 @@ nav{
                text-decoration: none;
                color: #ffffff;
                padding: 6px;
+               font-size: 24px;
                &:hover{
                    background: $headerColor;
                    border-radius: 20px;
@@ -30,5 +37,44 @@ nav{
 .header{
     img{
         width: 100%;
+    }
+}
+.cart{
+    text-align: center;
+    padding-top: 10px;
+    
+    .bike{
+        width: 40%;
+        margin-top: 15px;
+    }
+    h3{
+        font-size: 24px;
+        margin: 0;
+    }
+    h5{
+        font-size: 5.5em;
+        margin: 10px auto 20px;
+        font-weight: normal;
+        @include clearfix;  
+    }
+    a{
+        display: block;
+        color: $headerColor;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 0px;
+        border: 2px solid $headerColor;
+        width: 20%;
+        margin: 20px auto;
+        &:hover{
+            color: #ffffff;
+            background-color: $headerColor;
+            color: #ffffff;
+            }
+        }
+    .stars{
+        padding: 20px 0;
+        width: 10%;
     }
 }
