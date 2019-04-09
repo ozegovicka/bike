@@ -1,0 +1,29 @@
+@import '_vars';
+@import '_mixins';
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+nav{
+    background-color: #181818;
+    padding: 10px;
+    ul{
+        text-align: right;
+        margin-right: 10px;
+        li{
+           display: inline-block;
+           text-transform: uppercase;
+           margin-left: 20px;
+           a{
+               text-decoration: none;
+               color: #ffffff;
+               padding: 6px;
+               &:hover{
+                   background: #916e64;
+                   border-radius: 20px;
+               }
+           }
+        }
+    }
+}
